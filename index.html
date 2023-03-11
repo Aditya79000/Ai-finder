@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>ADV-C135 AI OBJECT FINDER </title>
+    <style>
+body{
+    background: linear-gradient(#09ef5a32 20%, #f242f5df 70%,#eb1583 90%);
+}
+.heading{
+ color: rgb(178, 7, 235);
+ font-size: 23px;
+ width: 100%;
+ margin: 0px;
+}
+#start{
+    background-color: rgb(88, 241, 68);
+    font-size: 23px;
+    font-style: italic;
+    color: white;
+}
+#button{
+    background-color: red;
+    width: 3%;
+    height: 3%;
+    border-radius: 10px; 
+}
+#button1{
+    background-color: rgb(255, 230, 0);
+    width: 3%;
+    height: 3%;
+    border-radius: 10px;
+}
+    </style>
+    </head>
+<body>
+    <center>
+    <h1 class="btn btn-info heading"> AI OBJECT FINDER </h1>
+    <h3 class="btn btn-info">The input name which you will give should match the names present in CoCo model then only it will detect</h3>
+    <h3 class="btn btn-info">Object Name :</h3>
+   <input type="text" width="10%" height="20%">
+      <br><br>
+    <button id="start" class="btn btn-success">Start</button>
+    <br><br>
+    <button id="button"></button>
+    <button id="button1"></button>
+</center>
+<script>
+    function setup()
+{
+    canvas = createCanvas(300, 300);
+    canvas.center();
+    video = createCapture(300, 300);
+    video.hide();
+}
+</script>
+</body>
+</html>
